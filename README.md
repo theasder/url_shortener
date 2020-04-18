@@ -19,10 +19,10 @@
 
 ## База данных
 
-* URLS {id INT NOT NULL UNIQUE, link VARCHAR(255)} -- исходные ссылки
-* ShortenedURLS {id INT NOT NULL UNIQUE, link VARCHAR(255)} -- укороченные ссылки
-* AllURLs {id INT NOT NULL UNIQUE, url_link_id VARCHAR(255), shortened_url_id VARCHAR(255)} -- список сокращенных ссылок
-* Logs {id INT NOT NULL UNIQUE, all_url_id VARCHAR(255), milliseconds BIGINT, IP VARCHAR(20), referrer VARCHAR(255)} -- логи по исходной ссылки
+* `URLS {id INT NOT NULL UNIQUE, link VARCHAR(255)}` -- исходные ссылки
+* `ShortenedURLS {id INT NOT NULL UNIQUE, link VARCHAR(255)}` -- укороченные ссылки
+* `AllURLs {id INT NOT NULL UNIQUE, url_link_id VARCHAR(255), shortened_url_id VARCHAR(255)}` -- список сокращенных ссылок
+* `Logs {id INT NOT NULL UNIQUE, all_url_id VARCHAR(255), milliseconds BIGINT, IP VARCHAR(20), referrer VARCHAR(255)}` -- логи по исходной ссылки. `milliseconds` --  количество миллисекунд с 01.01.1970 00:00:00
 
 
 
