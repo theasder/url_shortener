@@ -12,7 +12,7 @@ CREATE TABLE Logs
     milliseconds BIGINT, 
     IP VARCHAR(20), 
     referrer VARCHAR(255),
-    PRIMARY KEY (shortened_link)
+    PRIMARY KEY (id)
 );
 /* shortened_link -- сокращенная, milliseconds -- время в стандартном формате UNIX от 01.01.1970, 
 IP -- ip-адрес зашедшего, referrer -- источник перехода, если неизвестен источник, то NULL,
