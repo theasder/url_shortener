@@ -1,14 +1,14 @@
 CREATE TABLE URLS
 (
     link VARCHAR(255) NOT NULL,
-    shortened_link VARCHAR(255) NOT NULL UNIQUE,
-    PRIMARY KEY (shortened_link)
+    id VARCHAR(255) NOT NULL UNIQUE,
+    PRIMARY KEY (id)
 );
-/* link -- исходная ссылка, shortened_link -- сокращенная, в роли первичного ключа хеш сокращенной ссылки */
+/* link -- исходная ссылка, id -- сокращенная, в роли первичного ключа хеш сокращенной ссылки */
 
 CREATE TABLE Logs
 (
-    shortened_link VARCHAR(255) NOT NULL UNIQUE,
+    id VARCHAR(255) NOT NULL UNIQUE,
     milliseconds BIGINT, 
     IP VARCHAR(20), 
     referrer VARCHAR(255),
