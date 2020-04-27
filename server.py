@@ -54,4 +54,4 @@ def delete_url(hash_url):
     return hash_url
 
 
-run(app, host='localhost', port=8080)
+run(app, host='0.0.0.0', port=8080)
