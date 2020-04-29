@@ -1,6 +1,4 @@
-from bottle import Bottle, get, post, delete, request, run,
-
-
+from bottle import Bottle, get, post, delete, request, run
 
 app = Bottle()
 
@@ -59,5 +57,6 @@ def delete_url(hash_url):
     return hash_url
 
 
-run(app, host='0.0.0.0', port=8080)
+if __name__ == '__main__':
+    run(app, host='0.0.0.0', port=8080)
 
