@@ -11,7 +11,6 @@ services:
       POSTGRES_DB: auth_test
 
   server:
-    build: /
-    command: python ./server.py
+    build: ./
     ports:
       - 8080:8080

@@ -1,4 +1,6 @@
-from bottle import Bottle, get, post, delete, request, run
+from bottle import Bottle, get, post, delete, request, run,
+
+
 
 app = Bottle()
 
@@ -28,6 +30,9 @@ def get_url(hash_url):
     return hash_url
 
 
+
+
+
 @app.get("/v1/urls/<hash_url>/logs")
 def get_url_logs(hash_url):
     """
@@ -55,3 +60,4 @@ def delete_url(hash_url):
 
 
 run(app, host='0.0.0.0', port=8080)
+
