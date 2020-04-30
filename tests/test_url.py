@@ -14,7 +14,7 @@ class TestAPIMethods(unittest.TestCase):
         test_app = TestApp(app)
         resp = test_app.get('/v1/urls/test')
 
-        self.assertEqual(resp.status, "200 OK")
+        self.assertEqual(resp.status, "200 OKkjkj")
         self.assertEqual(resp.body, b"test")
 
 
