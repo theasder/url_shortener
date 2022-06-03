@@ -1,4 +1,4 @@
-bottle==0.12.18
+bottle==0.12.20
 webtest
 sqlalchemy
 psycopg2-binary
